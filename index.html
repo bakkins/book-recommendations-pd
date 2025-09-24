@@ -8,27 +8,29 @@
   </head>
   <body>
     <h1>Grāmatu vērtēšana</h1>
-    <form action="" method="POST">
-      <label for="formName">Vārds:</label>
-      <input type="text" id="formName" />
+    <form action="submit.php" method="POST">
+        <label for="formName">Vārds:</label>
+        <input type="text" id="formName" />
 
-      <label for="formSurname">Uzvārds:</label>
-      <input type="text" id="formSurname" />
+        <label for="formSurname">Uzvārds:</label>
+        <input type="text" id="formSurname" />
 
-      <label for="formLevel">Līmenis:</label>
-      <select name="formLevel" id="formlevel">
-        <option value="1">Nelasāma</option>
-        <option value="2">Slikta</option>
-        <option value="3">Viduvēja</option>
-        <option value="4">Laba</option>
-        <option value="5">Lieliska</option>
-      </select>
+        <label for="formLevel">Līmenis:</label>
+        <select name="formLevel" id="formlevel">
+            <option value="1">Nelasāma</option>
+            <option value="2">Slikta</option>
+            <option value="3">Viduvēja</option>
+            <option value="4">Laba</option>
+            <option value="5">Lieliska</option>
+        </select>
 
-      <label for="formBookName">Grāmatas nosaukums:</label>
-      <input type="text" id="formBookName" />
+        <label for="formBookName">Grāmatas nosaukums:</label>
+        <input type="text" id="formBookName" />
 
-      <label for="formDesc">Apraksts:</label>
-      <textarea name="formDesc" id="formDesc"></textarea>
+        <label for="formDesc">Apraksts:</label>
+        <textarea name="formDesc" id="formDesc"></textarea>
+
+        <input type="submit" value="Submit">
     </form>
   </body>
 </html>
