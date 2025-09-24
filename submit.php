@@ -1,4 +1,5 @@
 <?php
+require_once 'review.php';
 $servername = "localhost";
 $username = "book_review_user_24092025";
 $password = "password";
@@ -19,7 +20,8 @@ $stmt->bind_param("sssi", $name, $title, $review, $rating);
 $name = $_POST["formName"] . $_POST["formSurname"];
 $title = $_POST["formBookName"];
 $review = $_POST["formDesc"];
-$rating = $_POST["formLevel"];
+$rating = (int)$_POST["formLevel"];
+$reviewObj = new Review($name, $title, $review, $rating);
 $stmt->execute();
 
 echo "New records created successfully";
