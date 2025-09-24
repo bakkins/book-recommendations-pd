@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 $stmt = $conn->prepare("INSERT INTO book_review (full_name, book_title, review_text, rating) VALUES (?, ?, ?, ?)");
 $stmt->bind_param("sssi", $name, $title, $review, $rating);
 
-$name = $_POST["formName"] + $_POST["formSurname"];
+$name = $_POST["formName"] . $_POST["formSurname"];
 $title = $_POST["formBookName"];
 $review = $_POST["formDesc"];
 $rating = $_POST["formLevel"];
