@@ -27,10 +27,10 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 
     echo "<h2>". $row["id"] . "</h2>";
-    echo "<p>Full name:" . $row[full_name] . "</p>";
-    echo "<p>Book title:" . $row[book_title] . "</p>";
-    echo "<p>Review text:" . $row[review_text] . "</p>";
-    echo "<p>Rating:" . $LevelValue[$row[rating]] . "</p>"; 
+    echo "<p>Full name:" . $row["full_name"] . "</p>";
+    echo "<p>Book title:" . $row["book_title"] . "</p>";
+    echo "<p>Review text:" . $row["review_text"] . "</p>";
+    echo "<p>Rating:" . $LevelValue[$row["rating"]] . "</p>"; 
 
   }
 } else {
