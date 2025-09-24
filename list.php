@@ -37,4 +37,6 @@ if ($result->num_rows > 0) {
   echo "0 results";
 }
 $conn->close();
+
 ?>
+<a href="index.html">Atpakaļ uz formu</a>
