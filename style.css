@@ -1,0 +1,12 @@
+form {
+    width: 600px;
+    margin: auto;
+    border-style: groove;
+    border-width: 5px;
+    border-color: beige;
+}
+
+label {
+    font-weight: bold;
+    font-size: 2rem;
+}
